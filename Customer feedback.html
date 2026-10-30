@@ -1,0 +1,98 @@
+
+<html>
+<title> Customer Feedback </title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+$("div").click(function(){
+$(this).css({"color":"black"});
+});
+$("#face1").click(function(){
+$(this).text("yippee!");
+});
+
+$("#face2").click(function(){
+$(this).text("we will try our best to improve");
+});
+
+$("#face3").click(function(){
+$(this).text("oh no sorry for this");
+});
+
+});
+</script>
+<style>
+.top{padding:100px;background-color:grey;position:relative;}
+.header{padding:50px;background-color:grey;position:relative;}
+.middle{padding:200px;background;border-width:5px;border-style:solid; border-color:pink;background-color:lightblue;text-align:center;text-color:white;}
+.wrapper{padding:500px;background-color:lightblue;background;border-width:5px;border-style:solid; border-color:beige;} 
+.footer{padding:50px;background-color:burgundy;}
+.content{background-color:pink;opacity:0.8;font-size:30px;border:10px solid pink; padding:20px;text-align:center;}
+
+.face{
+width:100px;
+height:100px;
+border-radius:50%;
+Background-color:beige;
+text-align:center;
+margin:20px;
+padding-top:10px;
+}
+
+nav{float:right;}
+nav ul{margin:0; padding:0; list-style-type:none;}
+nav li{display:inline; margin-left:70px; padding-top:23px; position:relative;}
+Nav a {color:red; text-decoration:none; text-transform:uppercase; font-size:14px;}
+nav a:hover{color:blue;}
+nav a::before{;display:block; height:5px; background-color:red; position:absolute; top:0; width:0%; transition:all ease-in-out 250ms;}
+nav a:hover::before{width:100%;}
+.logo{float:left;margin:0;} 
+Table,th,td{border:1px; solid black; width:100%; padding:15px; text-align:left;}
+Th{background-color:green;color:white;}
+
+.move{border:3px solid white;height:60px;width:60px;background-image:url('travel.jpeg');background-size:cover;background-position:center;border-radius:50%;position:absolute;top:15px;left:15px;animation:circleanimation 8s infinite;}
+
+@keyframes circleanimation{
+0%{top:15px;left:15px;border-radius:50%; background-image:url('car1.jpg');}
+10%{top:40px;left:80px;border-radius:15%; background-image:url('car2.jpg');}
+25%{top:20px;left:50px;border-radius:0% 15%; background-image:url('car3.jpg');}
+40%{top:35px;left:110px;border-radius:15% 0%; background-image:url('car4.jpg');}
+55%{top:15px;left:15px;border-radius:50%; background-image:url('car5.jpg');}
+65%{top:13px;left:35px;border-radius:40%; background-image:url('car6.jpg');}
+80%{top:40px;left:532px;border-radius:0% 15%; background-image:url('car7.jpg');}
+90%{top:25px;left:110px;border-radius:15% 0%; background-image:url('car8.jpg');}
+100%{top:14px;left:107px;border-radius:50%; background-image:url('car9.jpg');}
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="move"></div>
+<nav>
+<ul>
+<li><a href="Index.html">Home</a>
+</li>
+<li><a href="bikes.html">Bikes</a>
+</li>
+<li><a href="form.html">Contact Us</a>
+</li>
+<li><a href="FAQ.html">FAQ</a>
+</li>
+</ul>
+</nav>
+</div>
+
+
+<div class="wrapper">
+
+<h2> Customer Feedback </h2>
+<div class="face" id="face1">Happy Customer</div>
+<div class="face" id="face2">Wants Improvement</div>
+<div class="face" id="face3">Unhappy Customer</div>
+
+</div>
+
+
+</body>
+</html>

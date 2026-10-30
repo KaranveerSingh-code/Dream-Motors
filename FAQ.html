@@ -1,0 +1,174 @@
+<html>
+<title> FAQ </title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+
+  $('.faq-list-item').click(function(){
+    var $answer = $(this).find('.answer');
+
+    if($answer.hasClass('open')) { 
+      $answer.removeClass('open');
+      // Use the slideUp() method to hide $answer
+      $answer.slideUp();
+      
+      // Find the <span> elements inside, then rewrite the content using the text() method
+      $(this).find('span').text('+');
+      
+    } else {
+      $answer.addClass('open'); 
+      // Use the slideDown() method to show $answer
+      $answer.slideDown();
+      $(this).find('span').text('-');
+      // Find the <span> elements inside, then rewrite the content using the text() method
+      
+      
+    }
+  });
+});
+</script>
+<style>
+.header{padding:50px;background-color:grey;position:relative;}
+nav{float:right;}
+nav ul{margin:0; padding:0; list-style-type:none;}
+nav li{display:inline; margin-left:70px; padding-top:23px; position:relative;}
+Nav a {color:red; text-decoration:none; text-transform:uppercase; font-size:14px;}
+nav a:hover{color:blue;}
+nav a::before{;display:block; height:5px; background-color:red; position:absolute; top:0; width:0%; transition:all ease-in-out 250ms;}
+nav a:hover::before{width:100%;}
+.logo{float:left;margin:0;} 
+
+.content{background-color:pink;
+opacity:0.8;
+Border:2px lightblue;
+font-size:30px;
+border:10px solid pink; 
+padding:20px;
+text-align:center;
+}
+
+.faqbox{
+Background-color:lightblue;
+Opacity:0.8;
+Border:2px solid green;
+Font-family:"Times New Roman",Times,serif;
+Padding:20px;
+Color:black;
+}
+
+.answer{
+Display:none;
+Padding:5px 0px;
+Margine-bottom:15px;
+}
+
+.faq-list-item{
+position:relative;
+margin:10px;
+border-bottom:1px solid black;
+cursor:pointer;
+
+}
+
+.faq-list-item span{
+position: absolute;
+display:inline-block;
+top:15px;
+right:200px;
+font-size:20px;
+}
+.move{border:3px solid white;height:60px;width:60px;background-image:url('travel.jpeg');background-size:cover;background-position:center;border-radius:50%;position:absolute;top:15px;left:15px;animation:circleanimation 8s infinite;}
+
+@keyframes circleanimation{
+0%{top:15px;left:15px;border-radius:50%; background-image:url('car1.jpg');}
+7%{top:40px;left:80px;border-radius:15%; background-image:url('car2.jpg');}
+15%{top:20px;left:50px;border-radius:0% 15%; background-image:url('car3.jpg');}
+23%{top:35px;left:110px;border-radius:15% 0%; background-image:url('car4.jpg');}
+45%{top:15px;left:15px;border-radius:50%; background-image:url('car5.jpg');}
+64%{top:13px;left:35px;border-radius:40%; background-image:url('car6.jpg');}
+76%{top:40px;left:532px;border-radius:0% 15%; background-image:url('car7.jpg');}
+79%{top:25px;left:110px;border-radius:15% 0%; background-image:url('car8.jpg');}
+81%{top:14px;left:107px;border-radius:50%; background-image:url('car9.jpg');}
+84%{top:15px;left:15px;border-radius:50%; background-image:url('bike1.jpg');}
+88%{top:40px;left:80px;border-radius:15%; background-image:url('bike2.jpg');}
+94%{top:20px;left:50px;border-radius:0% 15%; background-image:url('bike3.jpg');}
+100%{top:35px;left:110px;border-radius:15% 0%; background-image:url('bike4.jpg');}
+}
+</style>
+
+<body>
+
+<div class="header">
+<div class="move"></div>
+<nav>
+<ul>
+<li><a href="Index.html">Home</a>
+</li>
+<li><a href="bikes.html">Bikes</a>
+</li>
+<li><a href="form.html">Contact Us</a>
+</li>
+<li><a href="FAQ.html">FAQ</a>
+</li>
+<li><a href="customer feedback.html"> Feedback </a>
+</li>
+</ul>
+</nav>
+</div>
+
+<h1 class="content">FAQ</h1>
+<div class="faqbox">
+
+<ul>
+<li class="faq-list-item">
+
+<h2>
+Do you have kids friendly bike?
+</h2>
+
+<span>+</span>
+
+<div class="answer">
+<p>yes there are plenty of kids friendly bikes. </p>
+</div>
+</li>
+
+<li class="faq-list-item">
+
+<h2>
+My son is turning 18 and I want to buy him a fast car, which car should I go for?</h2>
+
+<span>+</span>
+
+<div class="answer">
+<p>You can go for the Lamborghini Fenomeno, it is fast, it looks good and is not that expensive according to other fast cars.</p>
+</div>
+</li>
+
+<li class="faq-list-item">
+
+<h2>
+What do the prices of the bikes range from?</h2>
+
+<span>+</span>
+
+<div class="answer">
+<p>They range between $5000 to $63,000</p>
+</div>
+</li>
+
+<li class="faq-list-item">
+
+<h2>
+Which is the most durable car you have?</h2>
+
+<span>+</span>
+
+<div class="answer">
+<p>The most durable car we have is the Toyota Land Cruiser. </p>
+</div>
+</li>
+<img src="faq.jpg" width="100%"; length="5%";>
+</body>
+</html>

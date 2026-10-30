@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Bikes</title>
+<style>
+H3{width:300px;height:100px;background-color:skyblue;border:1px solid black;}
+
+Th{background-color:green;color:white;}
+
+.header{padding:50px;background-color:grey;position:relative;}
+.middle{padding:200px;background-image:url("1.jpg");background-repeat:no-repeat;background-attachment:fixed;background-size:cover;}
+.wrapper{padding:500px;border-width:5px;border-style:solid;border-color:lightblue;background-color:beige;text-align:center;}
+.footer{padding:50px;background-color:Burgundy;}
+.content{background-color:pink;opacity:0.8;font-size:30px;border:10px solid pink;padding:20px;text-align:center;}
+
+nav{float:right;}
+nav ul{margin:0;padding:0;list-style-type:none;}
+nav li{display:inline;margin-left:70px;padding-top:23px;position:relative;}
+Nav a{color:red;text-decoration:none;text-transform:uppercase;font-size:14px;}
+nav a:hover{color:blue;}
+nav a::before{display:block;height:5px;background-color:red;position:absolute;top:0;width:0%;transition:all ease-in-out 250ms;}
+
+nav a:hover::before{width:100%;}
+.logo{float:left;margin:0;}
+.move{border:3px solid white;height:60px;width:60px;background-image:url('travel.jpeg');background-size:cover;background-position:center;border-radius:50%;position:absolute;top:15px;left:15px;animation:circleanimation 8s infinite;}
+
+@keyframes circleanimation{
+0%{top:15px;left:15px;border-radius:50%; background-image:url('bike1.jpg');}
+30%{top:40px;left:80px;border-radius:15%; background-image:url('bike2.jpg');}
+70%{top:20px;left:50px;border-radius:0% 15%; background-image:url('bike3.jpg');}
+100%{top:35px;left:110px;border-radius:15% 0%; background-image:url('bike4.jpg');}
+}
+</style>
+</head>
+<body>
+<div class="header">	
+<div class="move"></div>
+
+<nav>
+<ul>
+<li><a href="Index.html">Home</a></li>
+<li><a href="cars.html">cars</a></li>
+<li><a href="form.html">Contact Us</a></li>
+<li><a href="FAQ.html">FAQ</a></li>
+<li><a href="customer feedback.html"> Feedback </a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="middle">
+<h1 class="content">Bikes</h1>
+</div>
+<div class="wrapper">
+<h1>Top 4 bikes in my opinion.</h1>
+<ol>
+<li><b>Kawasaki Ninja H2R</b><br>
+ This is an absolute engineering monster built strictly for closed-course track racing. It is famously powered by a 998cc supercharged inline-four engine that puts out a staggering 310 to 326 horsepower. Instead of mirrors, it features distinct carbon-fiber aerodynamic wings on the front fairing to generate extreme high-speed downforce.
+</li>
+
+<br>
+<br>
+
+<li><b>Ducati Panigale V4 Tricolore</b><br>
+Combines massive 1,103cc V4 power with extreme collector rarity and a stunning Italian paint scheme.
+</li>
+
+<br>
+<br>
+
+<li><b>Ducati Panigale V4 R</b><br>
+A street-legal World Superbike racing platform boasting a 998cc engine built to rev past 16,000 RPM.
+</li>
+
+<br>
+<br>
+
+<li><b>Kawasaki Ninja 300</b><br>
+A lightweight, two-cylinder machine designed for accessibility rather than setting track records.
+</li>
+
+<br>
+<br>
+
+</ol>
+</div>
+<div class="footer">
+<h2>To know more about Bikes visit...<a href="https://en.wikipedia.org/wiki/Motorcycle">Bikes</a></h2>
+</div>
+</body>
+</html>
